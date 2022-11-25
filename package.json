@@ -1,0 +1,11 @@
+{
+  "name": "td_erc20_101",
+  "devDependencies": {
+    "@nomiclabs/hardhat-etherscan": "^3.1.2",
+    "@openzeppelin/contracts": "^4.8.0",
+    "@openzeppelin/hardhat-upgrades": "^1.21.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3"
+  }
+}
