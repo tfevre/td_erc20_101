@@ -3,7 +3,7 @@
 This project was created for a workshop at ESILV. The deposit and all information about it can be found here :  
 https://github.com/l-henri/erc20-101  
 
-I did not comment my code on purpose because you can find the breakdown of it below. 
+I did not comment my code directly in contracts on purpose because you can find the breakdown of it below. 
 I guarantee on my honor that this work is entirely personal.  
 
 
@@ -14,13 +14,14 @@ Here is the address of the allInOneSolution contract :
 https://goerli.etherscan.io/address/0x956c0A2159830De5E5b4C65235eFF15306d034fE    
 
 Here are some quick proofs :
-![one tx proof](images\one_tx_proof.png)  
-![total points](images\number_of_points.png)  
+![one tx proof](images/one_tx_proof.png)  
+![total points](images/number_of_points.png)  
 
 
 ## Code Breakdown 
 
-**MyToken.sol**  
+**MyToken.sol**   
+  
 I created 3 variables to store the whitelist, tier1 and tier2 addresses :  
 ```
     address[] private whitelist;
@@ -47,11 +48,13 @@ I added some requirements, like being whitelisted, and you get more tokens if yo
 
 The buyToken function is almost the same but to be able to call it, you need to send some ETH as it is a payable function.  
 
-**IEvaluator.sol**
+**IEvaluator.sol**  
+  
 This is an interface which allows me to call the functions of the evaluator contract.
 
 
 **AllInOneSolution.sol**  
+    
 I created 3 variables in the contract :  
 ```
     MyToken MyERC20;
